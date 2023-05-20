@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-starter-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
+    "postinstall": "nuxi prepare",
+    "preview": "nuxi preview",
+    "start": "nuxt start"
+  },
+  "devDependencies": {
+    "@nuxt/bridge": "latest",
+    "@nuxtjs/proxy": "^2.1.0",
+    "nuxt": "2.16.2"
+  },
+  "dependencies": {
+    "@vueuse/head": "^1.1.26"
+  }
+}
