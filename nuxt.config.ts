@@ -9,10 +9,7 @@ export default defineNuxtConfig({
   ssr: false,
   nitro: {
     devProxy: {
-      "/api": {
-        target: "https://pokeapi.co/api/",
-        changeOrigin: true,
-      },
+      "/api": "https://pokeapi.co/api/",
     },
   },
 });
