@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from '@nuxt/bridge';
+import { defineNuxtConfig } from "@nuxt/bridge";
 
 export default defineNuxtConfig({
   bridge: {
@@ -6,9 +6,13 @@ export default defineNuxtConfig({
     meta: true,
     nitro: true,
   },
+  ssr: false,
   nitro: {
     devProxy: {
-      '/api': 'https://pokeapi.co/api/v2/',
+      "/api": {
+        target: "https://pokeapi.co/api/",
+        changeOrigin: true,
+      },
     },
   },
 });
